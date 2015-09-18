@@ -1,0 +1,22 @@
+<div class="row">
+    <form name="form" ng-submit="addProduct()" role="form">
+        <div class="col-lg-3">
+            <label>Nom : </label>
+            <input type="text" name="name" ng-model="productToAdd.name"/>
+        </div>
+        <div class="col-lg-3">
+            <label>Prix : </label>
+            <input type="number" name="price" ng-model="productToAdd.price"/>
+        </div>
+        <div class="col-lg-3">
+            <label>Quantité (cl) : </label>
+            <input type="number" name="quantity" ng-model="productToAdd.quantity"/>
+        </div>
+        <div class="col-lg-3">
+            <label>Degré d'alcool (°) : </label>
+            <input type="number" name="alcohol" ng-model="productToAdd.alcohol"/>
+        </div>
+        <button type="submit" >Add product</button>
+
+    </form>
+</div>

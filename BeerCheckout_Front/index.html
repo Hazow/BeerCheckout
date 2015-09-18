@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>BeerCheckout</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+</head>
+<body ng-app="myApp">
+    <header>
+        <h1 id="logo"></h1>
+    </header>
+    <div id='content' class="container-fluid">
+        <section ng-view class="row"></section>
+    </div>
+    <hr>
+    <footer>
+        <hr>
+        <div class="hcenter">
+            Copyright © 2015
+        </div>
+        <hr>
+    </footer>
+
+    <script src="library/angular.min.js"></script>
+    <script src="library/angular-route.min.js"></script>
+
+    <script src="module.js"></script>
+    <script src="controllers/mainCtrl.js"></script>
+    <script src="controllers/backofficeCtrl.js"></script>
+    <script src="models/Purchase.js"></script>
+    <script src="models/Product.js"></script>
+
+    <!--
+        <script src="service/scrollglue.js"></script>
+        <script src="js/angular.audio.js"></script>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+    -->
+</body>
+</html>
